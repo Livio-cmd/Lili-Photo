@@ -133,13 +133,20 @@ header nav a {
 #about {
   padding: 120px 120px;
   position: relative;
+  height: 100vh;
+}
+#about h3 {
+  white-space: nowrap;
+  width: 100%;
+  color: #323232;
+  position: relative;
 }
 #about .btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 #about .btn-container .button {
   transition: all 0.2s ease-in-out;
@@ -150,23 +157,33 @@ header nav a {
 }
 #about .container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: hidden;
-  max-height: 800px;
+  align-items: center;
+  height: 80vh;
+  gap: 60px;
+}
+#about .image-container {
+  width: 50%;
+  background-image: url("../assets/images/lili.png");
+  height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center;
 }
 #about p {
   overflow-y: auto;
   max-height: 800px;
 }
 #about .right-side {
-  max-width: 50%;
-  justify-content: space-between;
+  max-width: 100%;
+  justify-content: center;
 }
 #about img {
-  height: 800px;
-  margin-right: 120px;
+  max-width: 100%;
+  height: 100% !important;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (min-width: 450px) {
@@ -190,18 +207,16 @@ header nav a {
   #about * {
     padding: 0 !important;
   }
+  #about h3 {
+    font-size: 30px !important;
+  }
   #about .container {
     flex-direction: column !important;
-    margin-top: 120px !important;
+    align-items: center;
     max-height: none !important;
   }
-  #about img {
-    width: 100%;
-    height: 50vh !important;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -o-object-position: top;
-       object-position: top;
+  #about .image-container {
+    background-size: 100%;
   }
   #about .btn-container {
     padding: 40px 0 !important;

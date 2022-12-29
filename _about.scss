@@ -1,13 +1,22 @@
 #about {
   padding: 120px 120px;
   position: relative;
+  height: 100vh;
+
+  h3 {
+    white-space: nowrap;
+    width: 100%;
+    color: #323232;
+    position: relative;
+
+  }
 
   .btn-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 60px;
 
     .button {
       transition: all .2s ease-in-out;
@@ -21,10 +30,20 @@
 
     .container {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        overflow: hidden;
-        max-height: 800px;
+        align-items: center;
+        // overflow: hidden;
+        height: 80vh;
+        gap: 60px;
+    }
+
+    .image-container{
+      width: 50%;
+      background-image: url('../assets/images/lili.png');
+      height: 80vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 500px;
+      background-position: center;
     }
 
     p {
@@ -33,16 +52,17 @@
     }
 
     .right-side {
-        max-width: 50%;
-        justify-content: space-between;
+        max-width: 100%;
+        justify-content: center;
     }
 
     img {
-        height: 800px;
-        margin-right: 120px;
+        max-width: 100%;
+        height: 100% !important;
         display: block;
+        object-fit: cover;
     }
-}
+  }
 
 @media only screen and (min-width: 450px) {
   #about{
@@ -72,17 +92,19 @@
       padding: 0 !important;
     }
 
+    h3 {
+      font-size: 30px !important;
+    }
+
     .container {
       flex-direction: column !important;
-      margin-top: 120px !important;
+      align-items: center;
+      // margin-top: 120px !important;
       max-height: none !important;
     }
 
-    img {
-      width: 100%;
-      height: 50vh !important;
-      object-fit: contain;
-      object-position: top;
+    .image-container {
+      background-size: 100%;
     }
 
     .btn-container {

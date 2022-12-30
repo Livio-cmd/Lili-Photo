@@ -19,6 +19,7 @@
 
     &:hover::before {
       transform: scale(1.02);
+      color: #AF8738;
     }
 
   }
@@ -33,7 +34,7 @@
       transition: all .2s ease-in-out;
 
       &:hover{
-      background-color: #212121;
+      background-color: #323232;
       color: white;
     }
     }
@@ -108,6 +109,11 @@
       }
     }
 
+    img {
+      object-fit: contain;
+      width: 80vw;
+    }
+
     .container {
       flex-direction: column !important;
       align-items: center;
@@ -118,6 +124,9 @@
     .btn-container {
       padding: 40px 0 !important;
       padding-top: 0 !important;
+
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .button {

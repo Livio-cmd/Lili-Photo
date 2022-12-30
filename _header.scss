@@ -57,6 +57,7 @@ header {
 
         .sub-link:hover .content{
             display: flex;
+            cursor: pointer;
         }
 
         .sub {
@@ -80,8 +81,8 @@ header {
                     font-style: italic;
 
                     &:hover {
-                        background-color: #212121;
-                        color: white;
+                        text-decoration: underline;
+                        text-decoration-thickness: 2px;
                     }
                 }
             }

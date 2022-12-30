@@ -1,13 +1,25 @@
 #about {
   padding: 120px 120px;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 
   h3 {
     white-space: nowrap;
     width: 100%;
+    display: flex;
+    justify-content: center;
     color: #323232;
     position: relative;
+    margin: 120px 0 !important;
+
+    &::before {
+      content: '→ Découvrez mon histoire ←';
+      transition: all .2s ease-in-out;
+    }
+
+    &:hover::before {
+      transform: scale(1.02);
+    }
 
   }
 
@@ -16,7 +28,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
 
     .button {
       transition: all .2s ease-in-out;
@@ -32,18 +43,13 @@
         display: flex;
         align-items: center;
         // overflow: hidden;
-        height: 80vh;
-        gap: 60px;
+        height: auto;
     }
 
     .image-container{
-      width: 50%;
-      background-image: url('../assets/images/lili.png');
-      height: 80vh;
       width: 100%;
-      background-repeat: no-repeat;
-      background-size: 500px;
-      background-position: center;
+      display: flex;
+      justify-content: center;
     }
 
     p {
@@ -57,7 +63,7 @@
     }
 
     img {
-        max-width: 100%;
+        max-width: 500px;
         height: 100% !important;
         display: block;
         object-fit: cover;
@@ -88,12 +94,18 @@
 @media only screen and (max-width: 1900px) {
 
   #about {
+    margin-top: 60px !important;
     * {
       padding: 0 !important;
     }
 
     h3 {
       font-size: 30px !important;
+      margin: 60px 0 !important;
+
+      &::before {
+        content: '→Découvrez mon histoire←';
+      }
     }
 
     .container {
@@ -103,17 +115,19 @@
       max-height: none !important;
     }
 
-    .image-container {
-      background-size: 100%;
-    }
-
     .btn-container {
       padding: 40px 0 !important;
+      padding-top: 0 !important;
     }
 
     .button {
       margin: 0 !important;
       padding: 8px 16px !important;
+      font-size: 18px;
+      font-family: "Raleway";
+      outline: none;
+      background-color: #212121;
+      color: white;
     }
 
     .right-side {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Raleway:wght@300&display=swap");
 header {
   width: 100%;
@@ -46,6 +47,33 @@ header nav a {
   font-size: 30px;
   font-weight: bold;
   position: relative;
+}
+header nav .sub-link:hover .content {
+  display: flex;
+}
+header nav .sub {
+  align-items: center;
+  position: relative;
+}
+header nav .sub .content {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  padding-top: 60px;
+  display: none;
+}
+header nav .sub .content a {
+  white-space: nowrap;
+  padding: 10px 48px;
+  font-weight: normal;
+  transition: all 0.15s ease-in-out;
+  border-radius: 4px;
+  font-style: italic;
+}
+header nav .sub .content a:hover {
+  background-color: #212121;
+  color: white;
 }
 
 #header-bottom {
@@ -133,20 +161,29 @@ header nav a {
 #about {
   padding: 120px 120px;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 #about h3 {
   white-space: nowrap;
   width: 100%;
+  display: flex;
+  justify-content: center;
   color: #323232;
   position: relative;
+  margin: 120px 0 !important;
+}
+#about h3::before {
+  content: "→ Découvrez mon histoire ←";
+  transition: all 0.2s ease-in-out;
+}
+#about h3:hover::before {
+  transform: scale(1.02);
 }
 #about .btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
 }
 #about .btn-container .button {
   transition: all 0.2s ease-in-out;
@@ -158,17 +195,12 @@ header nav a {
 #about .container {
   display: flex;
   align-items: center;
-  height: 80vh;
-  gap: 60px;
+  height: auto;
 }
 #about .image-container {
-  width: 50%;
-  background-image: url("../assets/images/lili.png");
-  height: 80vh;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: center;
+  display: flex;
+  justify-content: center;
 }
 #about p {
   overflow-y: auto;
@@ -179,7 +211,7 @@ header nav a {
   justify-content: center;
 }
 #about img {
-  max-width: 100%;
+  max-width: 500px;
   height: 100% !important;
   display: block;
   -o-object-fit: cover;
@@ -204,26 +236,36 @@ header nav a {
   }
 }
 @media only screen and (max-width: 1900px) {
+  #about {
+    margin-top: 60px !important;
+  }
   #about * {
     padding: 0 !important;
   }
   #about h3 {
     font-size: 30px !important;
+    margin: 60px 0 !important;
+  }
+  #about h3::before {
+    content: "→Découvrez mon histoire←";
   }
   #about .container {
     flex-direction: column !important;
     align-items: center;
     max-height: none !important;
   }
-  #about .image-container {
-    background-size: 100%;
-  }
   #about .btn-container {
     padding: 40px 0 !important;
+    padding-top: 0 !important;
   }
   #about .button {
     margin: 0 !important;
     padding: 8px 16px !important;
+    font-size: 18px;
+    font-family: "Raleway";
+    outline: none;
+    background-color: #212121;
+    color: white;
   }
   #about .right-side {
     max-width: 100% !important;
@@ -499,7 +541,8 @@ ul {
 
 .button {
   padding: 8px 16px !important;
-  outline: 1px solid #525252;
+  font-weight: normal;
+  font-family: "Abhaya";
   color: #212121;
 }
 

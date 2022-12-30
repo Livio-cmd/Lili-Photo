@@ -54,6 +54,38 @@ header {
             font-weight: bold;
             position: relative;
         }
+
+        .sub-link:hover .content{
+            display: flex;
+        }
+
+        .sub {
+            align-items: center;
+            position: relative;
+
+            .content {
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                padding-top: 60px;
+                display: none;
+
+                a {
+                    white-space: nowrap;
+                    padding: 10px 48px;
+                    font-weight: normal;
+                    transition: all .15s ease-in-out;
+                    border-radius: 4px;
+                    font-style: italic;
+
+                    &:hover {
+                        background-color: #212121;
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -75,10 +75,10 @@ function moveToAbout() {
 document.querySelector('body').style.width = "100vw";
 document.querySelector('body').style.height = "100vh";
 setTimeout(() => {
-    if(window.location.href.includes("accueil")) {
-      document.querySelector('main').style.display = "block";
-    }else {
+    if(window.location.href.includes("histoire")) {
       document.querySelector('main').style.display = "flex";
+    }else {
+      document.querySelector('main').style.display = "block";
    }
 
 document.querySelector('body').style.width = "auto";

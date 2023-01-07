@@ -122,17 +122,20 @@
     }
 
     .btn-container {
-      padding: 40px 0 !important;
       padding-top: 0 !important;
+      width: 100vw !important;
 
       flex-direction: row;
       flex-wrap: wrap;
+      gap: 3px !important;
+
+      justify-content: space-evenly;
     }
 
     .button {
       margin: 0 !important;
       padding: 8px 16px !important;
-      font-size: 18px;
+      font-size: 16px;
       font-family: "Raleway";
       outline: none;
       background-color: #212121;

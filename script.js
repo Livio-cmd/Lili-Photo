@@ -4,7 +4,8 @@ const menu = document.querySelector('nav > ul');
 const menuLinks = document.querySelectorAll("nav > ul li a");
 let open = false;
 const main = document.querySelector("main");
-const phone = document.getElementById('phone')
+const phone = document.getElementById('phone');
+
 
 window.onscroll = function() {scrollFunction()};
 
@@ -72,7 +73,8 @@ function moveToAbout() {
 }
 
 // Slider anti scroll
-document.querySelector('body').style.width = "100vw";
+if(document.querySelector(".slider") != null){
+    document.querySelector('body').style.width = "100vw";
 document.querySelector('body').style.height = "100vh";
 setTimeout(() => {
     if(window.location.href.includes("histoire")) {
@@ -83,5 +85,9 @@ setTimeout(() => {
 
 document.querySelector('body').style.width = "auto";
 document.querySelector('body').style.height = "auto";
+
 }, 2000);
+
 document.querySelector('main').style.display = "none";
+
+}

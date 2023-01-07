@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lili Photo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/tarifs.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="slider row">
+        <img src="./assets/images/logo.png" alt="logo">
+        <img src="./assets/svg/camera.svg" alt="logo">
+    </div>
+    <header>
+
+        <button onclick="topFunction()" id="scroll-back">↑</button>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="col">
+                <h2>Catégories</h2>
+
+
+                <div class="row">
+                    <div class="right-side col">
+
+                        <aside class="card-wrapper row">
+
+                            <div class="card col">
+                                <div class="layer"></div>
+                                <img src="./assets/images/baby.png" alt="Image de déscription du tarif">
+                                <span class="title">Bébé / Enfant</span>
+                            </div>
+
+                            <div class="card col">
+                                <div class="layer"></div>
+                                <img src="./assets/images/portrait.png" alt="Image de déscription du tarif">
+                                <span class="title">Portraits</span>
+                            </div>
+
+                            <div class="card col">
+                                <div class="layer"></div>
+                                <img src="./assets/images/mariage.png" alt="Image de déscription du tarif">
+                                <span class="title">Mariage</span>
+                            </div>
+
+                            <div class="card col">
+                                <div class="layer"></div>
+                                <img src="./assets//images/grossesse.png" alt="Image de déscription du tarif">
+                                <span class="title">Grosesse</span>
+                            </div>
+
+                        </aside>
+
+                        <a href="./accueil.html" class="button">← Retour</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script defer type="text/javascript" src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            delay: 200,
+            duration: 1000,
+            disable: function () {
+                var maxWidth = 1920;
+                return window.innerWidth < maxWidth;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

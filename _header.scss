@@ -4,7 +4,7 @@ header {
 
     position: relative;
 
-    background-image:url("../assets/images/background.jpg");
+    background-image: url("../assets/images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,6 +57,15 @@ header {
     }
 }
 
+#title {
+    white-space: nowrap;
+    width: fit-content;
+    color: #323232;
+    margin: 0 !important;
+    margin-top: 80px !important;
+
+}
+
 #header-bottom {
     background-color: white;
     padding: 20px;
@@ -87,71 +96,80 @@ header {
 
 @media only screen and (max-width: 1900px) {
 
-    header{
+    header {
         // background-image: url("../assets/images/10.jpg") !important;
         background: white;
         height: fit-content;
+        width: 100%;
 
-    #header-bottom-mobile{
-        display: block;
+        #title {
+            font-size: 30px !important;
+            margin: 0 !important;
+            font-size: 12vw !important;
+        }
 
-        .row {
-            flex-direction: row !important;
+        #header-bottom-mobile {
+            display: block;
+
+            .row {
+                flex-direction: row !important;
+                justify-content: center;
+            }
+
+            img {
+                width: 30px;
+                margin: 0 5px !important;
+            }
+        }
+
+        #header-bottom {
+            display: none;
+        }
+
+        .container {
+            padding: 50px !important;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #header-top {
+            img {
+                width: 30vh !important;
+            }
+
+            padding: 50px 30px !important;
+            padding-bottom: 0 !important;
+        }
+
+        nav>ul {
+            transition: all .2s ease-in-out;
+            display: flex;
             justify-content: center;
+            overflow: hidden;
+            height: 100vh;
+            width: 400px;
+
+            position: fixed;
+            background-color: white;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 6;
+            text-align: center;
+            transform: translateX(100%);
+
+            border-left: 2px solid #323232;
         }
-        img {
-            width: 30px;
-            margin: 0 5px !important;
-        }
-    }
-
-    #header-bottom {
-        display: none;
-    }
-
-    .container {
-        padding: 50px !important;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #header-top {
-        img {
-            width: 30vh !important;
-        }
-
-        padding: 50px 30px !important;
-    }
-
-    nav > ul{
-        transition: all .2s ease-in-out;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        height: 100vh;
-        width: 400px;
-
-        position: fixed;
-        background-color: white;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 6;
-        text-align: center;
-        transform: translateX(100%);
-
-        border-left: 2px solid #323232;
-    }
     }
 }
 
 @media only screen and (max-width: 500px) {
     header {
-        nav > ul{
+        nav>ul {
             width: 100%;
         }
     }

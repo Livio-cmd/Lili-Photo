@@ -1,79 +1,72 @@
 #about {
   padding: 120px 120px;
+  padding-top: 0;
   position: relative;
-  min-height: 100vh;
-
-  h3 {
-    white-space: nowrap;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    color: #323232;
-    position: relative;
-
-  }
 
   .btn-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 
     .button {
       transition: all .2s ease-in-out;
 
-      &:hover{
-      background-color: #323232;
-      color: white;
-    }
-    }
-  }
-
-    .container {
-        display: flex;
-        align-items: center;
-        // overflow: hidden;
-        height: auto;
-    }
-
-    .image-container{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-
-    p {
-      overflow-y: auto;
-      max-height: 800px;
-    }
-
-    .right-side {
-        max-width: 100%;
-        justify-content: center;
-    }
-
-    img {
-        max-width: 500px;
-        height: 100% !important;
-        display: block;
-        object-fit: cover;
+      &:hover {
+        background-color: #323232;
+        color: white;
+      }
     }
   }
+
+  .container {
+    display: flex;
+    align-items: center;
+    // overflow: hidden;
+    height: auto;
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    overflow-y: auto;
+    max-height: 800px;
+  }
+
+  .right-side {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 500px;
+    height: 100% !important;
+    display: block;
+    object-fit: cover;
+    margin: 80px 0 !important;
+  }
+}
 
 @media only screen and (min-width: 450px) {
-  #about{
-    img{
+  #about {
+    img {
       object-fit: contain !important;
     }
   }
 }
 
 @media only screen and (min-width: 450px) {
-  #about{
-    img{
+  #about {
+    img {
       object-fit: contain !important;
     }
-    p{
+
+    p {
       margin: 0 auto !important;
       width: 80vw;
       text-align: justify !important;
@@ -85,46 +78,51 @@
 
   #about {
     margin-top: 60px !important;
+
     * {
       padding: 0 !important;
-    }
-
-    h3 {
-      font-size: 30px !important;
-      margin: 60px 0 !important;
     }
 
     img {
       object-fit: contain;
       width: 80vw;
+      margin: 0 0 60px 0 !important;
     }
 
     .container {
       flex-direction: column !important;
       align-items: center;
-      // margin-top: 120px !important;
       max-height: none !important;
     }
 
     .btn-container {
-      padding-top: 0 !important;
-      width: 100vw !important;
+      padding-bottom: 30px!important;
+      width: 80vw;
+
+      justify-content: center;
 
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 3px !important;
+      gap: 10px !important;
 
-      justify-content: space-evenly;
     }
 
     .button {
       margin: 0 !important;
       padding: 8px 16px !important;
-      font-size: 16px;
+      font-size: 20px;
       font-family: "Raleway";
-      outline: none;
-      background-color: #212121;
+      font-weight: normal;
+      background-color: #474747;
       color: white;
+      flex: 1 1;
+      width: 100%;
+      white-space: nowrap;
+      text-align: center;
+
+      &:last-child {
+        background-color: #AF8738;
+      }
     }
 
     .right-side {

@@ -10,17 +10,6 @@
     justify-content: center;
     color: #323232;
     position: relative;
-    margin: 120px 0 !important;
-
-    &::before {
-      content: '→ Découvrez mon histoire ←';
-      transition: all .2s ease-in-out;
-    }
-
-    &:hover::before {
-      transform: scale(1.02);
-      color: #AF8738;
-    }
 
   }
 
@@ -103,10 +92,6 @@
     h3 {
       font-size: 30px !important;
       margin: 60px 0 !important;
-
-      &::before {
-        content: '→Découvrez mon histoire←';
-      }
     }
 
     img {

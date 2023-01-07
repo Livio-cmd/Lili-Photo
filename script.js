@@ -66,28 +66,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-function moveToAbout() {
-  document.querySelector('.slider').style.opacity = "1";
-  window.location.href = "./mon-histoire.html";
-}
-
-// Slider anti scroll
-if(document.querySelector(".slider") != null){
-    document.querySelector('body').style.width = "100vw";
-document.querySelector('body').style.height = "100vh";
-setTimeout(() => {
-    if(window.location.href.includes("histoire")) {
-      document.querySelector('main').style.display = "flex";
-    }else {
-      document.querySelector('main').style.display = "block";
-   }
-
-document.querySelector('body').style.width = "auto";
-document.querySelector('body').style.height = "auto";
-
-}, 2000);
-
-document.querySelector('main').style.display = "none";
-
-}

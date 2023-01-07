@@ -1,0 +1,150 @@
+#cards {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    .right-side {
+        height: auto;
+
+        .col {
+            height: fit-content;
+        }
+    }
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .tar-card {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 10px !important;
+        width: 500px;
+        transition: all .3s ease-in-out;
+
+        .image-container {
+            width: 500px;
+            height: 300px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px !important;
+
+            .button {
+                background-color: #AF8738;
+
+                &:hover {
+                    background-color: royalblue;
+                }
+            }
+
+            .spec {
+                margin-bottom: 40px;
+                font-size: .65em;
+                background-color: royalblue;
+                color: white;
+                width: fit-content;
+                padding: 4px 8px !important;
+                border-radius: 5px;
+            }
+
+            .tar-card-title {
+                font-weight: bolder;
+            }
+
+            .tar-card-price {
+                font-weight: bold;
+                color: #616161;
+                font-family: "Abahya";
+
+                &::after {
+                    content: ' euros';
+                }
+
+            }
+
+
+            ul {
+                margin: 30px 0;
+                margin-left: 20px;
+
+                span {
+                    font-size: .6em;
+                    color: rgb(100, 100, 100);
+
+                    &::before {
+                        content: '- ';
+                    }
+                }
+
+                .vide::before {
+                    content: '‎';
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width: 1900px) {
+    #cards {
+
+        .button {
+            font-size: .7em;
+        }
+
+        .right-side {
+            padding: 0 10px !important;
+        }
+
+        .card-wrapper {
+            flex-direction: column !important;
+            gap: 80px;
+        }
+
+        h2 {
+            font-size: .8em;
+        }
+
+        * {
+            height: auto;
+        }
+
+        ul li span {
+            font-size: .5em !important;
+        }
+
+        .tar-card {
+            width: 90vw;
+            background-color: #fefefe;
+
+            .image-container {
+                width: 100%;
+            }
+
+            .content {
+                padding: 0 !important;
+                padding-top: 10px !important;
+            }
+
+            .spec {
+                margin-bottom: 20px !important;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            ul {
+                line-height: 1;
+                margin: 20px 0 !important;
+            }
+        }
+    }
+}

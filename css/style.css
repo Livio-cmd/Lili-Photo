@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Raleway:wght@300&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Open+Sans:wght@300&display=swap");
 header {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url("../assets/images/background.jpg");
+  background-image: url("https://images.unsplash.com/photo-1601934025804-c631e2777f26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +94,7 @@ header nav a {
   header #title {
     font-size: 30px !important;
     margin: 0 !important;
-    font-size: 2em !important;
+    font-size: 1.8em !important;
   }
   header #header-bottom-mobile {
     display: block;
@@ -174,6 +175,15 @@ header nav a {
   align-items: center;
   height: auto;
 }
+#about h3 {
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #323232;
+  margin: 0 !important;
+  margin-top: 80px !important;
+}
 #about .image-container {
   width: 100%;
   display: flex;
@@ -225,6 +235,9 @@ header nav a {
   #about * {
     padding: 0 !important;
   }
+  #about h3 {
+    display: none;
+  }
   #about img {
     -o-object-fit: contain;
        object-fit: contain;
@@ -249,7 +262,7 @@ header nav a {
     margin: 0 !important;
     padding: 8px 16px !important;
     font-size: 20px;
-    font-family: "Raleway";
+    font-family: "open sans";
     font-weight: normal;
     background-color: #474747;
     color: white;
@@ -438,6 +451,127 @@ header nav a {
     font-size: 70px !important;
   }
 }
+#cards {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#cards .right-side {
+  height: auto;
+}
+#cards .right-side .col {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#cards .container {
+  padding: 0 !important;
+}
+#cards .tar-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px !important;
+  width: 500px;
+  transition: all 0.3s ease-in-out;
+}
+#cards .tar-card .image-container {
+  width: 500px;
+  height: 300px;
+}
+#cards .tar-card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px !important;
+}
+#cards .tar-card .content .button {
+  background-color: #AF8738;
+}
+#cards .tar-card .content .button:hover {
+  background-color: royalblue;
+}
+#cards .tar-card .content .spec {
+  margin-bottom: 40px;
+  font-size: 0.65em;
+  background-color: royalblue;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 8px !important;
+  border-radius: 5px;
+}
+#cards .tar-card .content .tar-card-title {
+  font-weight: bolder;
+}
+#cards .tar-card .content .tar-card-price {
+  font-weight: bold;
+  color: #616161;
+  font-family: "Abahya";
+}
+#cards .tar-card .content .tar-card-price::after {
+  content: " euros";
+}
+#cards .tar-card .content ul {
+  margin: 30px 0;
+  margin-left: 20px;
+}
+#cards .tar-card .content ul span {
+  font-size: 0.6em;
+  color: rgb(100, 100, 100);
+}
+#cards .tar-card .content ul span::before {
+  content: "- ";
+}
+#cards .tar-card .content ul .vide::before {
+  content: "‎";
+}
+#cards img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 1900px) {
+  #cards .button {
+    font-size: 0.7em;
+  }
+  #cards .right-side {
+    padding: 0 10px !important;
+  }
+  #cards .card-wrapper {
+    flex-direction: column !important;
+    gap: 80px;
+  }
+  #cards h2 {
+    font-size: 0.8em;
+  }
+  #cards * {
+    height: auto;
+  }
+  #cards ul li span {
+    font-size: 0.5em !important;
+  }
+  #cards .tar-card {
+    width: 90vw;
+    background-color: #fefefe;
+  }
+  #cards .tar-card .image-container {
+    width: 100%;
+  }
+  #cards .tar-card .content {
+    padding: 0 !important;
+    padding-top: 10px !important;
+  }
+  #cards .tar-card .spec {
+    margin-bottom: 20px !important;
+  }
+  #cards .tar-card img {
+    width: 100%;
+  }
+  #cards .tar-card ul {
+    line-height: 1;
+    margin: 20px 0 !important;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -455,9 +589,16 @@ body {
   position: relative;
   background: white;
   color: #474747;
-  font-family: "Raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: normal;
   font-size: 30px;
+}
+
+h2 a {
+  transition: all 0.2s ease-in-out;
+}
+h2 a:hover {
+  color: blue;
 }
 
 a {
@@ -470,7 +611,7 @@ a {
 }
 
 p {
-  font-family: Raleway;
+  font-family: open sans;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.8;

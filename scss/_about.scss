@@ -31,6 +31,15 @@
     height: auto;
   }
 
+  h3 {
+    white-space: nowrap;
+    width: fit-content;
+    color: #323232;
+    margin: 0 !important;
+    margin-top: 80px !important;
+
+}
+
   .image-container {
     width: 100%;
     display: flex;
@@ -95,6 +104,10 @@
       padding: 0 !important;
     }
 
+    h3 {
+      display: none;
+  }
+
     img {
       object-fit: contain;
       width: 80vw;
@@ -124,7 +137,7 @@
       margin: 0 !important;
       padding: 8px 16px !important;
       font-size: 20px;
-      font-family: "Raleway";
+      font-family: "open sans";
       font-weight: normal;
       background-color: #474747;
       color: white;

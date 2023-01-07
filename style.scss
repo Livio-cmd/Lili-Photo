@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Open+Sans:wght@300&display=swap");
 
-@import 'header';
-@import 'about';
-@import 'gallery';
-@import 'contact';
+@import './scss/header';
+@import './scss/about';
+@import './scss/gallery';
+@import './scss/contact';
+@import './scss/cards';
 
 * {
   padding: 0;
@@ -22,9 +23,16 @@ body {
   position: relative;
   background: white;
   color: #474747;
-  font-family: "Raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: normal;
   font-size: 30px;
+}
+
+h2 {
+  a {transition: all .2s ease-in-out;}
+  a:hover {
+    color: blue;
+  }
 }
 
 a {
@@ -37,7 +45,7 @@ a {
 }
 
 p {
-  font-family: Raleway;
+  font-family: open sans;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.8;

@@ -61,6 +61,10 @@ function toggleMenu() {
 
 }
 
+function moveTo(url) {
+  window.location = url;
+}
+
 
 function topFunction() {
   document.body.scrollTop = 0; // For Safari

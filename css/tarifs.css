@@ -33,7 +33,7 @@ main {
     padding: 10px 20px;
     margin: 0 !important;
     margin-top: 40px !important;
-    font-family: "Raleway";
+    font-family: "open sans";
     font-weight: lighter;
     width: fit-content;
     transition: all 200ms ease-in-out;
@@ -111,7 +111,7 @@ main {
     justify-content: center;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1000px) {
 
     main {
         height: auto;

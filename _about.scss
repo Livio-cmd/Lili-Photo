@@ -17,6 +17,10 @@
         background-color: #323232;
         color: white;
       }
+
+      &:last-child:hover {
+        background-color: #AF8738;
+      }
     }
   }
 
@@ -44,11 +48,19 @@
   }
 
   img {
-    max-width: 500px;
+    max-width: 300px;
     height: 100% !important;
     display: block;
     object-fit: cover;
     margin: 80px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #about {
+    .btn-container {
+      max-width: 300px !important;
+    }
   }
 }
 
@@ -98,6 +110,7 @@
     .btn-container {
       padding-bottom: 30px!important;
       width: 80vw;
+      max-width: 300px;
 
       justify-content: center;
 
@@ -136,6 +149,14 @@
         font-size: 20px;
         max-height: 50vh;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  #about {
+    img {
+      max-width: 500px !important;
     }
   }
 }

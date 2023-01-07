@@ -93,7 +93,7 @@ header nav a {
   header #title {
     font-size: 30px !important;
     margin: 0 !important;
-    font-size: 12vw !important;
+    font-size: 2em !important;
   }
   header #header-bottom-mobile {
     display: block;
@@ -166,6 +166,9 @@ header nav a {
   background-color: #323232;
   color: white;
 }
+#about .btn-container .button:last-child:hover {
+  background-color: #AF8738;
+}
 #about .container {
   display: flex;
   align-items: center;
@@ -185,7 +188,7 @@ header nav a {
   justify-content: center;
 }
 #about img {
-  max-width: 500px;
+  max-width: 300px;
   height: 100% !important;
   display: block;
   -o-object-fit: cover;
@@ -193,6 +196,11 @@ header nav a {
   margin: 80px 0 !important;
 }
 
+@media only screen and (max-width: 450px) {
+  #about .btn-container {
+    max-width: 300px !important;
+  }
+}
 @media only screen and (min-width: 450px) {
   #about img {
     -o-object-fit: contain !important;
@@ -231,6 +239,7 @@ header nav a {
   #about .btn-container {
     padding-bottom: 30px !important;
     width: 80vw;
+    max-width: 300px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -262,6 +271,11 @@ header nav a {
     text-align: center;
     font-size: 20px;
     max-height: 50vh;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  #about img {
+    max-width: 500px !important;
   }
 }
 #gallery {
@@ -309,16 +323,16 @@ header nav a {
     padding-top: 20px !important;
   }
   #gallery ul {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row !important;
     overflow-x: scroll;
   }
   #gallery li {
     height: auto;
-    width: 100%;
+    flex: 1 1 33.333333%;
   }
   #gallery img {
-    width: 200px;
+    width: 100%;
     max-height: none 50vh !important;
     min-width: 0;
   }

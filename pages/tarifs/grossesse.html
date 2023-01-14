@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lili Photo</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tarifs.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <button onclick="topFunction()" id="scroll-back">↑</button>
+    </header>
+
+    <main id="cards">
+        <div class="container">
+            <div class="col">
+
+
+                <div class="row">
+                    <div class="right-side col">
+                        <h2><a href="../categories.html">Catégories</a> > <span style="color: grey;">Grossesse</span></h2>
+
+                        <aside class="card-wrapper row">
+
+                            <div class="tar-card col">
+
+                                <div class="image-container">
+                                    <img src="../../assets/images/grossesse2.jpg" alt="Image de déscription du tarif">
+                                </div>
+
+                                <div class="content">
+
+                                    <span class="tar-card-title">Séance grossesse extérieur</span>
+
+                                    <ul>
+                                        <li><span>Durée 1 h30</span></li>
+                                        <li><span>Maman seule, en couple, en famille A partir de 7 ½ mois</span></li>
+                                        <li><span>10 photos HD + noir et blanc offerte</span></li>
+                                        <li><span>Dans un rayon de 40 km autour de cuers (83) Nombreux accessoires fournis</span></li>
+                                    </ul>
+
+                                    <span class="tar-card-price">320</span>
+
+                                    <a href="../../accueil.html#contact" class="button">Réserver</a>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="tar-card col">
+
+                                <div class="image-container">
+                                    <img src="../../assets/images/grossesse.png" alt="Image de déscription du tarif">
+                                </div>
+
+                                <div class="content">
+
+                                    <span class="tar-card-title">Séance grossesse en studio</span>
+
+                                    <ul>
+                                        <li><span>Durée 45 min</span></li>
+                                        <li><span>5 photos HD</span></li>
+                                        <li><span>Maman seule, en couple, en famille A partir de 7 ½ mois</span></li>
+                                        <li><span>Nombreux accessoires fournis</span></li>
+                                    </ul>
+
+                                    <span class="tar-card-price">250</span>
+
+                                    <a href="../../accueil.html#contact" class="button">Réserver</a>
+                                </div>
+                            </div>
+
+                            <div class="tar-card col">
+
+                                <div class="image-container">
+                                    <img src="../../assets/images/grossesse.png" alt="Image de déscription du tarif">
+                                </div>
+
+                                <div class="content">
+
+                                    <span class="tar-card-title">Pack séance grossesse + séance nouveau-né</span>
+
+                                    <ul>
+                                        <li><span>20 photos HD à choisir parmi les deux galeries + Noir et blanc offerte</span></li>
+                                    </ul>
+
+                                    <span class="tar-card-price">600</span>
+
+                                    <a href="../../accueil.html#contact" class="button">Réserver</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <a class="button" href="../categories.html">←</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script defer type="text/javascript" src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            delay: 200,
+            duration: 1000,
+            disable: function () {
+                var maxWidth = 1920;
+                return window.innerWidth < maxWidth;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

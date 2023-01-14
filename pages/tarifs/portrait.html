@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lili Photo</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tarifs.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <button onclick="topFunction()" id="scroll-back">↑</button>
+    </header>
+
+    <main id="cards">
+        <div class="container">
+            <div class="col">
+
+
+                <div class="row">
+                    <div class="right-side col">
+                        <h2><a href="../categories.html">Catégories</a> > <span style="color: grey;">Séance Portrait</span></h2>
+
+                        <aside class="card-wrapper row">
+
+                            <div class="tar-card col">
+
+                                <div class="image-container">
+                                    <img src="../../assets/images/portrait.png" alt="Image de déscription du tarif">
+                                </div>
+
+                                <div class="content">
+
+                                    <span class="tar-card-title">Séance portrait découverte</span>
+
+                                    <ul>
+                                        <li><span>En studio : 30 min</span></li>
+                                        <li><span>5 photos HD</span></li>
+                                    </ul>
+
+                                    <span class="tar-card-price">95</span>
+
+                                    <a href="../../accueil.html#contact" class="button">Réserver</a>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="tar-card col">
+
+                                <div class="image-container">
+                                    <img src="../../assets/images/portrait2.jpg" alt="Image de déscription du tarif">
+                                </div>
+
+                                <div class="content">
+
+                                    <span class="tar-card-title">Séance portrait</span>
+
+                                    <ul>
+                                        <li><span>Seul ou à deux</span></li>
+                                        <li><span>En sutdio ou à l'éxterieur</span></li>
+                                        <li><span>1h30 de shooting</span></li>
+                                        <li><span>Thème de votre choix</span></li>
+                                        <li><span>10 photos HD + Noir et blanc offertes</span></li>
+                                    </ul>
+
+                                    <span class="tar-card-price">350</span>
+
+                                    <a href="../../accueil.html#contact" class="button">Réserver</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <a class="button" href="../categories.html">←</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script defer type="text/javascript" src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            delay: 200,
+            duration: 1000,
+            disable: function () {
+                var maxWidth = 1920;
+                return window.innerWidth < maxWidth;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

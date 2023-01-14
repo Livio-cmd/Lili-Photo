@@ -24,7 +24,7 @@ main {
     align-items: center;
     height: auto;
     padding: 40px 0 !important;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .button {
@@ -107,7 +107,7 @@ main {
 }
 
 .col {
-    height: 100vh;
+    height: auto;
     justify-content: center;
 }
 

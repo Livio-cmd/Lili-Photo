@@ -6,29 +6,48 @@
         height: auto;
 
         .col {
-            height: fit-content;
+            height: auto;
         }
     }
 
     .container {
-        padding: 0 !important;
+        padding: 2vh 0 !important;
     }
 
     .tar-card {
+        overflow: hidden;
+        position: relative;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         padding: 10px !important;
         width: 500px;
         transition: all .3s ease-in-out;
 
+        &:hover .content {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
         .image-container {
             width: 500px;
-            height: 300px;
+            height: 80vh;
+            max-height: 800px;
         }
 
         .content {
             display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translateY(100%);
+            opacity: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            display: flex;
             flex-direction: column;
-            padding: 20px !important;
+            padding: 50px;
+            transition: all 0.3s ease-in-out;
 
             .button {
                 background-color: #AF8738;
@@ -76,10 +95,6 @@
                         content: '- ';
                     }
                 }
-
-                .vide::before {
-                    content: '‎';
-                }
             }
         }
     }
@@ -96,7 +111,7 @@
     #cards {
 
         .button {
-            font-size: .7em;
+            font-size: .7em !important;
         }
 
         .right-side {
@@ -126,11 +141,15 @@
 
             .image-container {
                 width: 100%;
+                height: 300px !important;
             }
 
             .content {
                 padding: 0 !important;
                 padding-top: 10px !important;
+                position: relative;
+                transform: translate(0, 0);
+                opacity: 1;
             }
 
             .spec {

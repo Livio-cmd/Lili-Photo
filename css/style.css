@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Open+Sans:wght@300&display=swap");
 header {
   width: 100%;
@@ -459,27 +458,43 @@ header nav a {
   height: auto;
 }
 #cards .right-side .col {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 #cards .container {
-  padding: 0 !important;
+  padding: 2vh 0 !important;
 }
 #cards .tar-card {
+  overflow: hidden;
+  position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 10px !important;
   width: 500px;
   transition: all 0.3s ease-in-out;
 }
+#cards .tar-card:hover .content {
+  transform: translate(0, 0);
+  opacity: 1;
+}
 #cards .tar-card .image-container {
   width: 500px;
-  height: 300px;
+  height: 80vh;
+  max-height: 800px;
 }
 #cards .tar-card .content {
   display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
   flex-direction: column;
-  padding: 20px !important;
+  padding: 50px;
+  transition: all 0.3s ease-in-out;
 }
 #cards .tar-card .content .button {
   background-color: #AF8738;
@@ -520,9 +535,6 @@ header nav a {
 #cards .tar-card .content ul span::before {
   content: "- ";
 }
-#cards .tar-card .content ul .vide::before {
-  content: "‎";
-}
 #cards img {
   width: 100%;
   height: 100%;
@@ -532,7 +544,7 @@ header nav a {
 
 @media only screen and (max-width: 1900px) {
   #cards .button {
-    font-size: 0.7em;
+    font-size: 0.7em !important;
   }
   #cards .right-side {
     padding: 0 10px !important;
@@ -556,10 +568,14 @@ header nav a {
   }
   #cards .tar-card .image-container {
     width: 100%;
+    height: 300px !important;
   }
   #cards .tar-card .content {
     padding: 0 !important;
     padding-top: 10px !important;
+    position: relative;
+    transform: translate(0, 0);
+    opacity: 1;
   }
   #cards .tar-card .spec {
     margin-bottom: 20px !important;

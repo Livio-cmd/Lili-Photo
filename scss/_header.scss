@@ -4,7 +4,7 @@ header {
 
     position: relative;
 
-    // background-image: url("../assets/images/background.jpg");
+    // background-image: url("../assets/images/background.webp");
     background-image: url("https://images.unsplash.com/photo-1601934025804-c631e2777f26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
     background-position: center;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ header {
 @media only screen and (max-width: 1900px) {
 
     header {
-        // background-image: url("../assets/images/10.jpg") !important;
+        // background-image: url("../assets/images/10.webp") !important;
         background: white;
         height: fit-content;
         width: 100%;

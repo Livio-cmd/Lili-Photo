@@ -17,14 +17,27 @@ main .container {
 }
 
 .container img{
-    width: 50%;
-    margin-right: 120px;
+    width: 15vw;
+    height: 15vw;
+    shape-outside: circle();
+    float: left;
+    margin-right: 60px;
+    border-radius: 100rem;
     object-fit: cover;
+    object-position: top;
 }
 
 h2 {
     text-decoration: none;
     font-weight: lighter;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
 }
 
 .button {
@@ -71,8 +84,18 @@ h2 {
         padding: 0 10px !important;
     }
 
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
     img {
         width: 100% !important;
+        height: auto !important;
+        border-radius: 0 !important;
         margin: 0 !important;
         margin-bottom: 60px !important;
     }

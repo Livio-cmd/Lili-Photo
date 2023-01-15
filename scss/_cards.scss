@@ -28,7 +28,7 @@
         }
 
         .image-container {
-            width: 500px;
+            max-width: 500px;
             height: 80vh;
             max-height: 800px;
         }
@@ -46,7 +46,7 @@
             background-color: rgba(255, 255, 255, 0.95);
             display: flex;
             flex-direction: column;
-            padding: 50px;
+            padding: 30px !important;
             transition: all 0.3s ease-in-out;
 
             .button {
@@ -107,7 +107,17 @@
 
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (min-width: 800px) {
+    .tar-card {
+        max-width: 50vh;
+    }
+
+    .card-wrapper {
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
     #cards {
 
         .button {
@@ -118,8 +128,12 @@
             padding: 0 10px !important;
         }
 
+        .row {
+            justify-content: center;
+        }
+
         .card-wrapper {
-            flex-direction: column !important;
+            flex-direction: column ;
             gap: 80px;
         }
 

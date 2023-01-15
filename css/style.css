@@ -652,8 +652,8 @@ h2 {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 2px;
-  -webkit-text-decoration-color: #AF8738;
-          text-decoration-color: #AF8738;
+  -webkit-text-decoration-color: #af8738;
+          text-decoration-color: #af8738;
 }
 
 h2,
@@ -669,7 +669,7 @@ h3 {
 
 .selected::before {
   transform: scaleX(1) !important;
-  background-color: #AF8738 !important;
+  background-color: #af8738 !important;
 }
 .selected:hover::before {
   opacity: 0;

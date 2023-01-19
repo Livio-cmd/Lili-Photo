@@ -153,6 +153,9 @@ header nav a {
   padding-top: 0;
   position: relative;
 }
+#about #mobile-image {
+  display: none;
+}
 #about .btn-container {
   width: 100%;
   display: flex;
@@ -228,10 +231,6 @@ header nav a {
     text-align: justify !important;
   }
 }
-img.mobile-image {
-  display: none;
-}
-
 @media only screen and (max-width: 1900px) {
   #about {
     margin-top: 60px !important;

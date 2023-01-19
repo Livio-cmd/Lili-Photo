@@ -3,6 +3,11 @@
   padding-top: 0;
   position: relative;
 
+
+#mobile-image {
+  display: none;
+}
+
   .btn-container {
     width: 100%;
     display: flex;
@@ -95,9 +100,6 @@
   }
 }
 
-img.mobile-image {
-  display: none;
-}
 
 @media only screen and (max-width: 1900px) {
 

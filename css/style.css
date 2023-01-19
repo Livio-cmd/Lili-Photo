@@ -131,6 +131,7 @@ header nav a {
     overflow: hidden;
     height: 100vh;
     width: 400px;
+    gap: 3vh !important;
     position: fixed;
     background-color: white;
     top: 0;
@@ -227,6 +228,10 @@ header nav a {
     text-align: justify !important;
   }
 }
+img.mobile-image {
+  display: none;
+}
+
 @media only screen and (max-width: 1900px) {
   #about {
     margin-top: 60px !important;
@@ -242,6 +247,10 @@ header nav a {
        object-fit: contain;
     width: 80vw;
     margin: 0 0 60px 0 !important;
+    display: none;
+  }
+  #about #mobile-image {
+    display: block;
   }
   #about .container {
     flex-direction: column !important;

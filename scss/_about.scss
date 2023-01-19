@@ -95,6 +95,10 @@
   }
 }
 
+img.mobile-image {
+  display: none;
+}
+
 @media only screen and (max-width: 1900px) {
 
   #about {
@@ -112,6 +116,11 @@
       object-fit: contain;
       width: 80vw;
       margin: 0 0 60px 0 !important;
+      display: none;
+    }
+
+    #mobile-image {
+      display: block;
     }
 
     .container {

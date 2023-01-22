@@ -19,18 +19,6 @@
         display: flex;
     }
 
-    #addr {
-        &:after {
-            content: '25 impasse George Sand 83390 Cuers';
-        }
-    }
-
-    #mobileAddr {
-        &:before {
-            content: 'Studio:';
-        }
-    }
-
     .active{
         font-weight: bolder !important;
         color: green !important;
@@ -105,21 +93,18 @@
                 margin-right: 10px !important;
             }
         }
-
-        #addr {
-            &:after {
-                content: 'Cliquez pour voir';
-            }
-        }
-
-        #mobileAddr {
-            &:before {
-                content: 'Adresse sutdio:';
-            }
-        }
     }
 
     h3 {
         font-size: 70px !important;
+    }
+
+    .sutdio-contact {
+        flex-direction: column !important;
+
+        a {
+            margin-left: 0 !important;
+            margin-top: 0;
+        }
     }
 }

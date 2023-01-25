@@ -14,18 +14,7 @@ function scrollFunction() {
 window.onscroll = function () {
   scrollFunction();
 };
-const copyPhone = () => {
-    navigator.clipboard.writeText("06 14 75 15 04"),
-      (phone.innerText = "copié !"),
-      phone.classList.toggle("active"),
-      setTimeout(() => {
-        (document.getElementById("phone").innerText = "06 14 75 15 04"),
-          phone.classList.toggle("active");
-      }, 2e3);
-  },
-  resetNav = () => {
-    menu.style.transform = "translateX(0)";
-  };
+
 function toggleMenu() {
   0 == open
     ? ((menu.style.transform = "translateX(0)"),

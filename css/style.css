@@ -602,6 +602,26 @@ header nav a {
     margin: 20px 0 !important;
   }
 }
+@font-face {
+  font-family: "Times New Roman";
+  src: url(/) format("truetype");
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/assets/liberation-serif/LiberationSerif-Regular.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/assets/liberation-serif/LiberationSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/assets/liberation-serif/LiberationSerif-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
 * {
   padding: 0;
   margin: 0;
@@ -794,7 +814,7 @@ main {
   body {
     overflow-x: hidden !important;
   }
-  h1, h2, h3 {
+  h1, h3 {
     font-family: "Times New Roman", Times, serif !important;
   }
   #title {

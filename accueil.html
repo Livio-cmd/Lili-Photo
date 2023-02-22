@@ -174,7 +174,7 @@
     <script defer type="text/javascript" src="./script.js"></script>
     <script defer type="text/javascript" src="./cursor.js"></script>
 
-    <script defer>
+    <script type="text/javascript" defer>
 
 const imgView = document.getElementById("image-view");
 const galImages = document.querySelectorAll(".gallery-image");
@@ -200,13 +200,13 @@ function toggleHiddenItems() {
 galImages.forEach((element) => {
   element.addEventListener("click", () => {
     const image = imgView.children[0];
+    console.log(image);
 
     image.src = element.src;
     imgView.classList.toggle("active");
     toggleHiddenItems();
   });
 });
-
     </script>
 
 </body>

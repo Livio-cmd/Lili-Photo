@@ -51,11 +51,12 @@ body {
   }
 }
 #cursor {
+  mix-blend-mode: difference;
   z-index: 999999;
   position: fixed;
   width: 50px;
   height: 50px;
-  border: 1px solid #323232;
+  border: 1px solid #dbdbd9;
   border-radius: 50%;
   left: 0;
   top: 0;
@@ -64,12 +65,12 @@ body {
   transition: .1s;
 }
 #cursor2 {
+  mix-blend-mode: difference;
   z-index: 999999;
   position: fixed;
   width: 8px;
   height: 8px;
-  border: 1px solid #323232;
-  background-color: #323232;
+  background-color: #dbdbd9;
   border-radius: 50%;
   left: 0;
   top: 0;
@@ -83,6 +84,9 @@ body {
   opacity: 1;
   border: none;
   mix-blend-mode: difference;
+
+  width: 80px;
+  height: 80px;
 }
 
 #cursor2.active {

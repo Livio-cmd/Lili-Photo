@@ -120,6 +120,26 @@
                         <div class="layer"></div><img class="gallery-image" loading="lazy" src="./assets/images/enfant1.webp"
                             alt="Image de présentation du travail du photographe">
                     </li>
+                    <li>
+                        <div class="layer"></div><img class="gallery-image" loading="lazy" src="./assets/images/begette.webp"
+                            alt="Image de présentation du travail du photographe">
+                    </li>
+                    <li>
+                        <div class="layer"></div><img class="gallery-image" loading="lazy" src="./assets/images/velo.webp"
+                            alt="Image de présentation du travail du photographe">
+                    </li>
+                    <li>
+                        <div class="layer"></div><img class="gallery-image" loading="lazy" src="./assets/images/Chien.webp"
+                            alt="Image de présentation du travail du photographe">
+                    </li>
+                    <li>
+                        <div class="layer"></div><img class="gallery-image" loading="lazy" src="./assets/images/panier.webp"
+                            alt="Image de présentation du travail du photographe">
+                    </li>
+                    <li>
+                        <div class="layer"></div><img class="gallery-image" loading="lazy" src="./assets/images/couple.webp"
+                        alt="Image de présentation du travail du photographe">
+                    </li>
                 </ul>
             </div>
         </section>
@@ -173,41 +193,6 @@
     </main>
     <script defer type="text/javascript" src="./script.js"></script>
     <script defer type="text/javascript" src="./cursor.js"></script>
-
-    <script type="text/javascript" defer>
-
-const imgView = document.getElementById("image-view");
-const galImages = document.querySelectorAll(".gallery-image");
-
-const toHideItem = [
-  document.querySelector("header"),
-  document.querySelector("main"),
-];
-
-function closeViewer() {
-  toHideItem.forEach((item) => {
-    item.style.display = "inherit";
-  });
-  imgView.classList.toggle("active");
-}
-
-function toggleHiddenItems() {
-  toHideItem.forEach((item) => {
-    item.style.display = "none";
-  });
-}
-
-galImages.forEach((element) => {
-  element.addEventListener("click", () => {
-    const image = imgView.children[0];
-    console.log(image);
-
-    image.src = element.src;
-    imgView.classList.toggle("active");
-    toggleHiddenItems();
-  });
-});
-    </script>
 
 </body>
 

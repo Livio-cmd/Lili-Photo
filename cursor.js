@@ -1,8 +1,12 @@
 // custom cursor
-document.body.innerHTML += `
-  <div id="cursor"></div>
-  <div id="cursor2"></div>
-`;
+const elem1 = document.createElement("div");
+const elem2 = document.createElement("div");
+elem1.id = "cursor";
+elem2.id = "cursor2";
+
+document.body.appendChild(elem1);
+document.body.appendChild(elem2);
+
 
 const cursor = document.getElementById("cursor");
 const cursor2 = document.getElementById("cursor2");

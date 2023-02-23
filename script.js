@@ -40,5 +40,35 @@ function topFunction() {
   });
 
 //  show big image
+const imgView = document.getElementById("image-view");
+const galImages = document.querySelectorAll(".gallery-image");
 
+const toHideItem = [
+  document.querySelector("header"),
+  document.querySelector("main"),
+];
 
+function closeViewer() {
+  toHideItem.forEach((item) => {
+    item.style.display = "inherit";
+  });
+  imgView.classList.toggle("active");
+  window.location = "./accueil.html#gallery"
+}
+
+function toggleHiddenItems() {
+  toHideItem.forEach((item) => {
+    item.style.display = "none";
+  });
+}
+
+galImages.forEach((element) => {
+  element.addEventListener('click', () => {
+    const image = imgView.children[0];
+    console.log(image);
+
+    image.src = element.src;
+    imgView.classList.toggle("active");
+    toggleHiddenItems();
+  });
+});

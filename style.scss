@@ -81,6 +81,7 @@ body {
 #cursor.active {
   background-color: white;
   opacity: 1;
+  border: none;
   mix-blend-mode: difference;
 }
 
@@ -121,6 +122,7 @@ body {
   #showed {
     width: auto;
     height: 80vh;
+    box-shadow: 0px 0px 1000px white;
   }
 }
 

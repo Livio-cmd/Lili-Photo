@@ -99,11 +99,16 @@ body {
   width: 100%;
   height: 100vh;
 
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 60px;
+
+  opacity: 0;
+  transform: scale(0);
+
+  transition: all 500ms ease-in-out;
 
   button {
     width: 50px;
@@ -127,11 +132,8 @@ body {
 }
 
 #image-view.active {
-  display: flex;
-
-  & ~ #mouse {
-    display: block !important;
-  }
+  opacity: 1;
+  transform: scale(1);
 }
 
 @media (max-width: 720px) {

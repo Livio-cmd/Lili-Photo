@@ -49,23 +49,28 @@ const toHideItem = [
 ];
 
 function closeViewer() {
-  toHideItem.forEach((item) => {
-    item.style.display = "inherit";
-  });
   imgView.classList.toggle("active");
-  window.location = "./accueil.html#gallery"
+
+  setTimeout(() => {
+    toHideItem.forEach((item) => {
+      item.style.display = "inherit";
+    });
+    
+      window.location = "./accueil.html#gallery";
+      document.body.style.backgroundColor = "inherit";
+  }, 500);
 }
 
 function toggleHiddenItems() {
   toHideItem.forEach((item) => {
     item.style.display = "none";
+    document.body.style.backgroundColor = "#121212";
   });
 }
 
 galImages.forEach((element) => {
   element.addEventListener('click', () => {
     const image = imgView.children[0];
-    console.log(image);
 
     image.src = element.src;
     imgView.classList.toggle("active");
